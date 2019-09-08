@@ -1,0 +1,24 @@
+address {
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  width: 255px;
+  text-align: center;
+  margin: 36px auto;
+
+  font-style: normal;
+
+  a {
+    display: block;
+    padding: 16px;
+  }
+
+  &:hover {
+    background-color: white;
+
+    a {
+      color: #0f0b11;
+    }
+  }
+}

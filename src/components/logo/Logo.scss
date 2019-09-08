@@ -1,0 +1,110 @@
+.logo {
+  color: #fff;
+  text-align: center;
+  animation-fill-mode: both;
+  font: 59px texgyreadventor-regular;
+  max-width: 500px;
+  margin: auto;
+
+  span {
+    color: #fff;
+    font: 59px texgyreadventor-bold;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  &.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  &.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  &.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+  &.delay-3s {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+
+  &.delay-4s {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+
+  &.delay-5s {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+
+  &.fast {
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+  }
+
+  &.faster {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+  }
+
+  &.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+
+  &.slower {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}

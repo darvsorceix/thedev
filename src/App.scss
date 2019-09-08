@@ -1,0 +1,66 @@
+body {
+  background-color: #0f0b11;
+  color: #fff;
+  font-family: texgyreadventor-regular, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+*, :after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important
+}
+
+@font-face {
+  font-family: steiner;
+  src: url(assets/fonts/steiner.ttf)
+}
+
+@font-face {
+  font-family: texgyreadventor-regular;
+  src: url(assets/fonts/texgyreadventor-regular.otf);
+  src: local(texgyreadventor-regular), url("assets/fonts/texgyreadventor-regular.otf");
+}
+
+@font-face {
+  font-family: texgyreadventor-bold;
+  src: url(assets/fonts/texgyreadventor-bold.otf);
+  src: local(texgyreadventor-bold), url("assets/fonts/texgyreadventor-bold.otf");
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  &.portfolio {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: none;
+  }
+}
+
+header {
+  background-color: #fff;
+  color: #0f0b11;
+  padding: 3px 0;
+  margin: 20px 0;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+}
